@@ -1,0 +1,40 @@
+Source: mustache.js
+Section: web
+Priority: extra
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: David Paleino <dapal@debian.org>,
+           Martín Ferrari <tincho@debian.org>,
+Build-Depends: debhelper (>= 9~), rake, node-uglify, mocha, chai
+Standards-Version: 3.9.8
+Homepage: http://mustache.github.io/
+Vcs-Git: https://anonscm.debian.org/git/pkg-javascript/mustache.js.git/
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-javascript/mustache.js.git/
+
+Package: libjs-mustache
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: javascript-common
+Description: Mustache rendering engine for Javascript
+ Inspired by ctemplate, Mustache is a framework-agnostic way to render
+ logic-free views. (As in model-view-controller.)
+ .
+ As ctemplates says, "It emphasizes separating logic from presentation:
+ it is impossible to embed application logic in this template
+ language."
+ .
+ This package provides the Mustache rendering engine for Javascript. Includes
+ wrappers for jQuery, MooTools, Dojo, YUI3, and qooxdoo.
+
+Package: node-mustache
+Architecture: all
+Depends: ${misc:Depends}, nodejs
+Description: Mustache rendering engine for Javascript - NodeJS
+ Inspired by ctemplate, Mustache is a framework-agnostic way to render
+ logic-free views. (As in model-view-controller.)
+ .
+ As ctemplates says, "It emphasizes separating logic from presentation:
+ it is impossible to embed application logic in this template
+ language."
+ .
+ This package provides the Mustache rendering engine for NodeJS, and the
+ `mustache' command-line tool.
